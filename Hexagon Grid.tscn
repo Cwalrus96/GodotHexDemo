@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Hexagon Grid.gd" type="Script" id=1]
+[ext_resource path="res://Large Hexagon.tscn" type="PackedScene" id=2]
+
+[node name="Hexagon Grid" type="Spatial" index="0"]
+
+script = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Large Hexagon" parent="." index="0" instance=ExtResource( 2 )]
+
+[node name="Camera" type="Camera" parent="." index="1"]
+
+transform = Transform( 1, 0, 0, 0, 0.0409476, 0.999161, 0, -0.999161, 0.0409476, 0.0575567, 22.3131, 1.93364 )
+keep_aspect = 1
+cull_mask = 1048575
+environment = null
+h_offset = 0.0
+v_offset = 0.0
+doppler_tracking = 0
+projection = 0
+current = false
+fov = 90.0
+size = 1.0
+near = 0.05
+far = 100.0
+
+
